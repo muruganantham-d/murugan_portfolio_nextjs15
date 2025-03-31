@@ -1,7 +1,8 @@
 import { allPosts } from 'content-collections'
 
 import { getLatestProjectsQuery } from '@/lib/querys'
-import { client } from '@/lib/sanity'
+// import { client } from '@/lib/sanity'
+import { client } from '@/sanity/lib/client';
 import { PostCard } from '@/components/cards/post-card'
 import Hero from '@/components/hero'
 import { PageHeader } from '@/components/page-header'

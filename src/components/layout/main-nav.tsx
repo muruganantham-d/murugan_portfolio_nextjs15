@@ -24,7 +24,7 @@ const MainNav: FC<MainNavProps> = ({ items }) => {
           className='hidden items-center space-x-2 md:flex'
         >
           <p className='hidden text-2xl font-bold md:inline-block'>
-            JA<span className='text-primary'>.</span>
+            Murugan<span className='text-primary'>.</span>
           </p>
         </Link>
 

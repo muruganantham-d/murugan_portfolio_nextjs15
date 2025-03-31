@@ -34,10 +34,10 @@ const Hero = () => {
         <div className='space-y-2'>
           <m.div variants={FADE_DOWN_ANIMATION_VARIANTS} className='space-y-2'>
             <m.h1 className='text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl'>
-              Hi, I’m Jorge Assaf.
+              Hi, I’m Muruganantham.
             </m.h1>
             <m.p className='text-2xl font-semibold text-primary md:text-3xl lg:text-4xl'>
-              Front-end Developer.
+              Full-stack Developer.
             </m.p>
           </m.div>
           <m.p
@@ -55,7 +55,7 @@ const Hero = () => {
           >
             <Link
               className={cn(buttonVariants())}
-              href='https://github.com/JorgeAssaf'
+              href='https://github.com/muruganantham-d'
               target='_blank'
               rel='noopener noreferrer'
               title='View my GitHub profile'
@@ -66,7 +66,7 @@ const Hero = () => {
             </Link>
             <Link
               className={cn(buttonVariants())}
-              href='https://www.linkedin.com/in/jorge-enrique-assaf/'
+              href='https://www.linkedin.com/in/murugan-dr-baa770234/'
               title='View my LinkedIn profile'
               aria-label='View my LinkedIn profile'
               target='_blank'
@@ -77,7 +77,7 @@ const Hero = () => {
             </Link>
             <Link
               className={cn(buttonVariants({ variant: 'secondary' }))}
-              href='https://drive.google.com/file/d/1bwEF1UQPz5Bj_yS8Y0yNyifDOGMDJOlU/view?usp=drive_link'
+              href='https://drive.google.com/file/d/1qoFfd6euV-lvCA9hAa7-vK0eym5gnTll/view?usp=sharing'
               title='Download my resume'
               aria-label='Download my resume'
               target='_blank'
