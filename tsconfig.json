@@ -42,7 +42,7 @@
     "**/*.mjs",
     ".next/types/**/*.ts",
     ".contentlayer/generated"
-  ],
+, "src/components/constants/index.js"  ],
   "exclude": [
     "node_modules"
   ]

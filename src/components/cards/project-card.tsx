@@ -61,7 +61,8 @@ export const ProjectCard = ({ project }: ProjectsCardProps) => {
                 key={tech.name}
                 variant='secondary'
                 style={{
-                  backgroundColor: `#${tech.color}`,
+                  // backgroundColor: `#${tech.color}`,
+                  backgroundColor: tech.color,
                 }}
                 className='inline-flex items-center gap-2 rounded-lg text-white'
               >

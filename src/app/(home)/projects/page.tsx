@@ -5,11 +5,11 @@ import { Formaters } from '@/helpers/formaters'
 
 import type { ProjectsEntity } from '@/types/sanity'
 import { GETPROJECTSQUERY } from '@/lib/querys'
-import { client } from '@/lib/sanity'
 import CategoryButtons from '@/components/category-buttons'
 import { FramerDiv } from '@/components/framer'
 import { PageHeader } from '@/components/page-header'
 import Projects from '@/components/projects'
+import { client } from '@/sanity/lib/client'
 
 export const dynamic = 'force-dynamic'
 

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'Tailwind CSS',
     'TypeScript',
     'Shadcn',
-    'Jorge Assaf',
+    'Muruganantham',
     'Portfolio',
     'Blog',
     'Sanity',
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: 'Jorge Assaf',
+      name: 'Muruganantham',
       url: 'https://github.com/JorgeAssaf',
     },
   ],
-  creator: 'Jorge Assaf',
+  creator: 'Muruganantham',
   openGraph: {
     type: 'website',
     locale: 'en_US',

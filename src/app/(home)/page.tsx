@@ -2,7 +2,7 @@ import { allPosts } from 'content-collections'
 
 import { getLatestProjectsQuery } from '@/lib/querys'
 // import { client } from '@/lib/sanity'
-import { client } from '@/sanity/lib/client';
+// import { client } from '@/sanity/lib/client';
 import { PostCard } from '@/components/cards/post-card'
 import Hero from '@/components/hero'
 import { PageHeader } from '@/components/page-header'
@@ -10,6 +10,7 @@ import Projects from '@/components/projects'
 import Scroll from '@/components/scroll'
 
 import type { ProjectsEntity } from '../../types/sanity'
+import { client } from '@/sanity/lib/client'
 
 export default async function Home() {
   const projects = await client.fetch<ProjectsEntity[]>(getLatestProjectsQuery)
@@ -25,13 +26,13 @@ export default async function Home() {
 
       <Projects projects={projects} />
 
-      <PageHeader
+      {/* <PageHeader
         title='Recent Resourses'
         description='View my latest shared resources and articles'
-      />
-      {allPosts.slice(0, 3).map((post, i) => (
+      /> */}
+      {/* {allPosts.slice(0, 3).map((post, i) => (
         <PostCard i={i} key={post.slug} post={post} />
-      ))}
+      ))} */}
     </section>
   )
 }

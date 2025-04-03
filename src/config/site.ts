@@ -10,9 +10,9 @@ const links = {
 }
 
 export const siteConfig = {
-  name: 'Jorge Assaf',
+  name: 'Muruganantham',
   description:
-    'Personal portfolio of Jorge Assaf, a software engineer based in Mexico City. ',
+    'Personal portfolio of Muruganantham, a software engineer based in Mexico City. ',
   url:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'

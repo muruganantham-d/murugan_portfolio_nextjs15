@@ -61,7 +61,7 @@ const SiteFooter = () => {
             </Link>
           </div>
         </div>
-        <p className='mt-10'>Built by Jorge Assaf.</p>
+        <p className='mt-10'>Built by Muruganantham.</p>
         <p>
           Model by{' '}
           <Link
