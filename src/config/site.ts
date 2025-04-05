@@ -37,8 +37,9 @@ export const siteConfig = {
     //   items: [],
     // },
     {
-      title: 'Resources',
-      href: '/blog',
+      title: 'Skills',
+      // href: '/blog',
+      href: '/skills',
       disabled: false,
       items: [],
     },

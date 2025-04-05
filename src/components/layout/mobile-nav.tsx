@@ -29,8 +29,17 @@ const MobileNav: FC<MobileNavProps> = ({ items }) => {
     <div className='flex h-20 items-center justify-between md:hidden'>
       <div className='flex text-left md:flex'>
         <Link aria-label='Home' href='/' title='Home'>
-          <p className='text-2xl font-bold md:flex'>
-            JA<span className='text-primary'>.</span>
+          {/* <p className='text-2xl font-bold md:flex'>
+            Murugan<span className='text-primary'>.</span>
+          </p> */}
+          <p className='text-primary text-2xl font-bold md:flex'
+          style={{
+            fontFamily: "Acme, sans-serif !important",
+            cursor: "pointer",
+            textShadow: "0px 1px 1px black",
+          }}
+        >
+         &lt; Murugan /&gt;
           </p>
         </Link>
       </div>
@@ -56,7 +65,7 @@ const MobileNav: FC<MobileNavProps> = ({ items }) => {
                 onClick={() => setIsOpen(false)}
               >
                 <p className='text-3xl font-bold md:inline-block'>
-                  JA<span className='text-primary'>.</span>
+                  Murugan<span className='text-primary'>.</span>
                 </p>
               </Link>
             </div>

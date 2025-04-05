@@ -23,8 +23,21 @@ const MainNav: FC<MainNavProps> = ({ items }) => {
           href='/'
           className='hidden items-center space-x-2 md:flex'
         >
-          <p className='hidden text-2xl font-bold md:inline-block'>
+          {/* <p className='hidden text-2xl font-bold md:inline-block'>
             Murugan<span className='text-primary'>.</span>
+          </p> */}
+
+        <p className='hidden text-primary text-2xl font-bold md:inline-block'
+          style={{
+            fontFamily: "Acme, sans-serif !important",
+            fontSize: "1.9rem",
+            // color: "var(--primary-color)",
+            // color: "#3d5a80 !important",
+            cursor: "pointer",
+            textShadow: "0px 1px 1px black",
+          }}
+        >
+         &lt; Murugan /&gt;
           </p>
         </Link>
 

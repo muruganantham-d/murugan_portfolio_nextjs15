@@ -51,7 +51,7 @@ export default async function ProjectsPage({
       <PageHeader
         page
         title='Projects'
-        description='Here you can see my last projects'
+        description='Below is an overview of my most recent professional projects'
       />
       <div className='flex flex-col gap-10'>
         <FramerDiv

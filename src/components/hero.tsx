@@ -44,9 +44,7 @@ const Hero = () => {
             variants={FADE_DOWN_ANIMATION_VARIANTS}
             className='max-w-2xl text-muted-foreground md:text-lg'
           >
-            I am a passionate software engineer with a strong background in
-            full-stack web development. I love building innovative and
-            user-friendly applications.
+          I'm a passionate software engineer with expertise in full-stack web development, dedicated to crafting innovative, efficient, and user-friendly applications.
           </m.p>
 
           <m.div

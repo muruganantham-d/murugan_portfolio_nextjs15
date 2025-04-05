@@ -21,6 +21,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'avatars.githubusercontent.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+      },
     ],
   },
   transpilePackages: ['three', '@react-three/drei', '@react-three/fiber'],

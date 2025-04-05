@@ -11,32 +11,33 @@ export interface JobExperience {
 
 export const JOB_EXPERIENCE = [
   {
-    ocupation: 'Fullstack Developer',
-    company: 'Lika Software',
-    url: 'https://likasoftware.com/',
-    location: 'Remote',
-    startDate: '2024-02-20',
+    ocupation: 'Full Stack Developer',
+    company: 'InnogenX',
+    location: 'Bengaluru, Karnataka',
+    url: 'https://innogenx.in/',
+    startDate: '2024-08-01',
+    endDate: '2025-03-31',
     description:
-      'Working on projects for clients using Next.js, React, TypeScript, and Tailwindcss. Developing features, fixing bugs, and improving the performance of the applications.',
+      'Led the development of a role-based e-commerce platform for admins, distributors, and customers. Improved UI/UX by 60% and optimized deployment using Hostinger VPS. Tech stack: JavaScript, ReactJS, NodeJS, ExpressJS, MySQL, Redux.',
   },
   {
-    ocupation: 'Frontend Developer',
-    company: 'Pawtrics',
-    url: 'https://pawtrics.com/',
-    location: 'Remote',
-    startDate: '2023-08-20',
-    endDate: '2024-03-20',
+    ocupation: 'Software Developer',
+    company: 'W2S Solutions',
+    location: 'Chennai, Tamil Nadu',
+    url: 'https://www.w2ssolutions.com/',
+    startDate: '2024-02-01',
+    endDate: '2024-07-31',
     description:
-      'Worked on the frontend in PIMS project. Using Next 12, React, TypeScript, Material UI, and Supabase.',
+      'Developed a React and Next.js-based e-learning platform UI for a UAE client, integrating multilingual support via Google Translate API and implementing SSR for improved SEO. Tech stack: ReactJS, Next.js, TypeScript, Redux, HTML5, CSS3.',
   },
   {
-    ocupation: 'Frontend Developer',
-    company: 'Omaka',
-    url: 'https://omaka.app/',
-    location: 'Remote',
-    startDate: '2023-07-01',
-    endDate: '2024-02-20',
+    ocupation: 'Software Engineer',
+    company: 'Aaludra Technology',
+    location: 'Coimbatore, Tamil Nadu',
+    url: 'https://aaludra.com/',
+    startDate: '2023-01-01',
+    endDate: '2024-01-31',
     description:
-      'Worked on the frontend of the admin panel, using vite, React, TypeScript, and Material UI.',
+      'Built a cloud comparison platform using microservices architecture to integrate AWS, Azure, and GCP. Reduced cloud selection time by 85%. Tech stack: MERN stack, Material UI, TypeScript, JWT, REST APIs.',
   },
 ] satisfies JobExperience[]

@@ -11,6 +11,7 @@ import Scroll from '@/components/scroll'
 
 import type { ProjectsEntity } from '../../types/sanity'
 import { client } from '@/sanity/lib/client'
+import SkillsPage from './skills/page'
 
 export default async function Home() {
   const projects = await client.fetch<ProjectsEntity[]>(getLatestProjectsQuery)
@@ -18,10 +19,11 @@ export default async function Home() {
   return (
     <section>
       <Hero />
-      <Scroll />
+      {/* <Scroll /> */}
+      <SkillsPage/>
       <PageHeader
         title='Recent Projects'
-        description='View my latest projects and experiments'
+        description="View the latest projects I've worked on"
       />
 
       <Projects projects={projects} />
