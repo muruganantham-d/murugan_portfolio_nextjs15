@@ -13,8 +13,9 @@ import { useMediaQuery } from 'react-responsive';
 // import { Dog } from './Model'
 
 const HomeSceneFallback = () => {
-  const { progress } = useProgress()
-  //
+
+  const { progress } = useProgress();
+
 
   return (
     <Html className='flex items-center justify-center'>
@@ -62,7 +63,7 @@ const HomeScene = () => {
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
         <OrbitControls autoRotate autoRotateSpeed={0.5} />
-        {/* <Preload all /> */}
+        <Preload all />
       </Suspense>
     </Canvas>
   )

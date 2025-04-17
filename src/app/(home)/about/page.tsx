@@ -9,6 +9,9 @@ import { PageHeader } from '@/components/page-header'
 import { motion } from 'framer-motion'
 import { React } from '@/components/icons' // ✅ named import
 import Image from 'next/image'
+import Link from 'next/link'
+import { cn } from '@/lib/utils'
+import { buttonVariants } from '@/components/ui/button'
 
 
 type Certificate = {
@@ -147,7 +150,12 @@ export default function AboutPage() {
   </div>
 </FramerDiv>
 
+{/*  */}
 
+        <Link className={cn(buttonVariants(), 'my-5')} href='/'>
+          Go to Home Page
+        </Link>
+  
       </FramerSection>
     </>
   )

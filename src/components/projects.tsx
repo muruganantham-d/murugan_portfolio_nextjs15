@@ -11,12 +11,15 @@ import { cn } from '@/lib/utils'
 import { ProjectCard } from '@/components/cards/project-card'
 
 import { buttonVariants } from './ui/button'
+import { usePathname } from 'next/navigation'
 
 interface ProjectsProps {
   projects: ProjectsEntity[]
 }
 
+
 const Projects: FC<ProjectsProps> = ({ projects }) => {
+  const pathname = usePathname()
   return (
     <m.div
       initial='hidden'
@@ -45,18 +48,25 @@ const Projects: FC<ProjectsProps> = ({ projects }) => {
           <FileWarningIcon className='mb-5 mt-7 size-12 text-primary' />
 
           <h2 className='scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
-            No projects found 😢
+            No projects found 🧑‍💻
           </h2>
           <p className='max-w-md text-center text-muted-foreground'>
             Try changing the filters or adding new projects to see them here.
           </p>
         </div>
       )}
-      <m.div variants={FADE_DOWN_ANIMATION_VARIANTS}>
+      {/* <m.div variants={FADE_DOWN_ANIMATION_VARIANTS}>
         <Link className={cn(buttonVariants(), 'my-5')} href='/about'>
           View my experience in about page
         </Link>
+      </m.div> */}
+{pathname?.startsWith('/projects') && (
+      <m.div variants={FADE_DOWN_ANIMATION_VARIANTS}>
+        <Link className={cn(buttonVariants(), 'my-5')} href='/skills'>
+          View next page
+        </Link>
       </m.div>
+    )}
     </m.div>
   )
 }

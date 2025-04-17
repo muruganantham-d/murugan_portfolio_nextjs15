@@ -1,19 +1,37 @@
 import { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useFrame, ThreeElements } from '@react-three/fiber';
 import { useGLTF, useTexture } from '@react-three/drei';
+import { Mesh, Group, Material, BufferGeometry } from 'three';
+import { GLTF } from 'three-stdlib';
 
-export function HackerRoom(props) {
-  const { nodes, materials } = useGLTF('/models/hacker-room.glb');
-  const monitortxt = useTexture('textures/desk/monitor.png');
-  const screenTxt = useTexture('textures/desk/screen.png');
+type GLTFResult = GLTF & {
+  nodes: {
+    [key: string]: Mesh<BufferGeometry, Material>;
+  };
+  materials: {
+    [key: string]: Material;
+  };
+};
 
-  // 🔄 Reference for rotation
-  const groupRef = useRef();
+export function HackerRoom(props: ThreeElements['group']) {
+  const groupRef = useRef<Group>(null);
 
-  // 🎥 Rotate Clockwise (Y-Axis)
+  const { nodes, materials } = useGLTF('/models/hacker-room.glb') as unknown as GLTFResult;
+
+  // const monitortxt = useTexture('textures/desk/monitor.png');
+  // const screenTxt = useTexture('textures/desk/screen.png');
+
+  const [monitortxt, screenTxt] = useTexture([
+    'textures/desk/monitor.png',
+    'textures/desk/screen.png'
+  ]) as any;
+  
+  // Skip rendering until both textures are loaded
+  if (!monitortxt || !screenTxt) return null;
+
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.01; // Negative for clockwise
+      groupRef.current.rotation.y += 0.01;
     }
   });
 
@@ -64,17 +82,27 @@ useGLTF.preload('/models/hacker-room.glb');
 
 
 
-
+// import { useRef } from 'react';
+// import { useFrame } from '@react-three/fiber';
 // import { useGLTF, useTexture } from '@react-three/drei';
 
 // export function HackerRoom(props) {
 //   const { nodes, materials } = useGLTF('/models/hacker-room.glb');
-
 //   const monitortxt = useTexture('textures/desk/monitor.png');
 //   const screenTxt = useTexture('textures/desk/screen.png');
 
+//   // 🔄 Reference for rotation
+//   const groupRef = useRef();
+
+//   // 🎥 Rotate Clockwise (Y-Axis)
+//   useFrame(() => {
+//     if (groupRef.current) {
+//       groupRef.current.rotation.y += 0.01; // Negative for clockwise
+//     }
+//   });
+
 //   return (
-//     <group {...props} dispose={null}>
+//     <group ref={groupRef} {...props} dispose={null}>
 //       <mesh geometry={nodes.screen_screens_0.geometry} material={materials.screens}>
 //         <meshMatcapMaterial map={screenTxt} />
 //       </mesh>
@@ -100,3 +128,4 @@ useGLTF.preload('/models/hacker-room.glb');
 // }
 
 // useGLTF.preload('/models/hacker-room.glb');
+

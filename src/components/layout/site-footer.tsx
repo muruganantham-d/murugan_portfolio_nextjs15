@@ -19,7 +19,7 @@ const SiteFooter = () => {
         {/* Section 2: Social Icons */}
         <div className="flex gap-3">
           <Link
-            href="https://x.com/assafenrique"
+            href="https://x.com/murugan5050"
             target="_blank"
             rel="noreferrer"
             aria-label="X (Twitter)"
@@ -28,7 +28,7 @@ const SiteFooter = () => {
             <Twitter className="size-4" aria-hidden="true" />
           </Link>
           <Link
-            href="https://linkedin.com/in/jorge-enrique-assaf/"
+            href="https://www.linkedin.com/in/murugan-dr-baa770234/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -37,7 +37,7 @@ const SiteFooter = () => {
             <LinkedIn className="size-4" aria-hidden="true" />
           </Link>
           <Link
-            href="https://github.com/jorgeassaf"
+            href="https://github.com/muruganantham-d"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -51,8 +51,8 @@ const SiteFooter = () => {
         <div className="text-center md:text-right">
  
         <p>
-    <a href="mailto:youremail@example.com" className="hover:underline">muruganantham2399@gmail.com</a> |{' '}
-    <a href="tel:+919876543210" className="hover:underline">+91 9344391547</a>
+    <a href="mailto:muruganantham2399@gmail.com" className="hover:underline">muruganantham2399@gmail.com</a> |{' '}
+    <a href="tel:+919344391547" className="hover:underline">+91 9344391547</a>
   </p>
      
         </div>

@@ -24,7 +24,7 @@ export const MyResumen = ({
   if (!isDesktop)
     return (
       <Link
-        href='https://drive.google.com/file/d/1qoFfd6euV-lvCA9hAa7-vK0eym5gnTll/view?usp=sharing'
+        href='https://drive.google.com/file/d/1HPUibPT-guhvdX_moLA6QRmZ9Z_76_R4/view'
         arial-label='Download Resume'
         target='_blank'
         rel='noopener noreferrer'
@@ -40,7 +40,7 @@ export const MyResumen = ({
     )
   return (
     <Link
-      href='https://drive.google.com/file/d/1qoFfd6euV-lvCA9hAa7-vK0eym5gnTll/view?usp=sharing'
+      href='https://drive.google.com/file/d/1HPUibPT-guhvdX_moLA6QRmZ9Z_76_R4/view'
       arial-label='Download Resume'
       target='_blank'
       rel='noopener noreferrer'

@@ -21,14 +21,14 @@ export const JOB_EXPERIENCE = [
       'Led the development of a role-based e-commerce platform for admins, distributors, and customers. Improved UI/UX by 60% and optimized deployment using Hostinger VPS. Tech stack: JavaScript, ReactJS, NodeJS, ExpressJS, MySQL, Redux.',
   },
   {
-    ocupation: 'Software Developer',
-    company: 'W2S Solutions',
-    location: 'Chennai, Tamil Nadu',
-    url: 'https://www.w2ssolutions.com/',
+    ocupation: 'Freelance Software Developer',
+    company: 'Self-employed / Freelance',
+    location: 'Remote',
+    url: '#',
     startDate: '2024-02-01',
     endDate: '2024-07-31',
     description:
-      'Developed a React and Next.js-based e-learning platform UI for a UAE client, integrating multilingual support via Google Translate API and implementing SSR for improved SEO. Tech stack: ReactJS, Next.js, TypeScript, Redux, HTML5, CSS3.',
+      'Developed the front end of a React and Next.js-based educational platform for a UAE client, integrating multilingual support via Google Translate API and implementing server-side rendering (SSR) to improve SEO and performance. Tech stack: ReactJS, Next.js, TypeScript, Redux, HTML5, CSS3.',
   },
   {
     ocupation: 'Software Engineer',

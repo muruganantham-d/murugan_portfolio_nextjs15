@@ -1,6 +1,8 @@
 import { useRef, ReactNode } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { easing } from 'maath';
+import * as THREE from 'three';
+
 
 interface HeroCameraProps {
   isMobile: boolean;

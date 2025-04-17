@@ -3,21 +3,21 @@ import type icons from '@/components/icons'
 export type SiteConfig = typeof siteConfig
 
 const links = {
-  twitter: 'https://twitter.com/@assafEnrique',
-  github: 'https://github.com/JorgeAssaf/JA',
-  githubAccount: 'https://github.com/jorgeassaf',
-  threads: 'https://threads.net/@jorgeassaf_dev',
+  twitter: 'https://x.com/murugan5050',
+  github: 'https://github.com/muruganantham-d',
+  githubAccount: 'https://github.com/muruganantham-d',
+  // threads: 'https://threads.net/@jorgeassaf_dev',
 }
 
 export const siteConfig = {
   name: 'Muruganantham',
   description:
-    'Personal portfolio of Muruganantham, a software engineer based in Mexico City. ',
+    'Personal portfolio of Muruganantham, a software engineer based Bengaluru India ',
   url:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
       : process.env.NEXT_PUBLIC_APP_URL!,
-  ogImage: 'https://jorgeassaf/opengraph-image.png',
+  ogImage: 'https://murugan/opengraph-image.png',
   sourceCode: links.github,
   mainNav: [
     {
@@ -72,7 +72,7 @@ export const siteConfig = {
         },
         {
           title: 'Threads',
-          href: links.threads,
+          // href: links.threads,
           external: true,
         },
       ],

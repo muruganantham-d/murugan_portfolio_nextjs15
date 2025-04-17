@@ -1,3 +1,5 @@
+'use client'
+
 // components/Services/Services.tsx
 import React from "react";
 import "./services.css";
@@ -6,8 +8,15 @@ import "./services.css";
 // import { servicesData } from "data/servicesData";
 import { ServicesCard } from "./services-card";
 import { servicesData } from "./skills-data";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constants";
+import Link from "next/link";
+import { m } from 'framer-motion'
 
 const SkillsPage: React.FC = () => {
+    const pathname = usePathname()
   return (
     <section
       data-aos="fade-right"
@@ -25,6 +34,13 @@ const SkillsPage: React.FC = () => {
           <ServicesCard key={index} image={icon} title={title} tags={tags} />
         ))}
       </div>
+      {pathname?.startsWith('/skills') && (
+      <m.div variants={FADE_DOWN_ANIMATION_VARIANTS} className={'self-start'}>
+        <Link className={cn(buttonVariants(), 'my-5')} href='/about'>
+          View next page
+        </Link>
+      </m.div>
+    )}
     </section>
   );
 };

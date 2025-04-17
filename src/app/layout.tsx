@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Muruganantham',
-      url: 'https://github.com/JorgeAssaf',
+      url: 'https://github.com/muruganantham-d',
     },
   ],
   creator: 'Muruganantham',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/opengraph-image.png`],
-    creator: '@AssafEnrique',
+    creator: '@murugan5050',
   },
 }
 
