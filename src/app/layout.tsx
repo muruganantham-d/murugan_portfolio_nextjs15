@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `${siteConfig.name} - %s`,
   },
   description: siteConfig.description,
-  keywords: [
+  keywords: [ 
     'Next.js',
     'React',
     'Tailwind CSS',

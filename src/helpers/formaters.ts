@@ -1,4 +1,10 @@
-import { format, parseISO, type FormatOptions } from 'date-fns'
+import { format, parseISO} from 'date-fns';
+
+type FormatOptions = {
+  // Define your own options here if needed
+  locale?: any;
+  timeZone?: string;
+};
 
 export class Formaters {
   static formatDate(

@@ -33,7 +33,8 @@ const HomeScene = () => {
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
   return (
     <Canvas
-      className='size-full murugan'
+      // className='size-full murugan'
+      className='size-full'
       camera={{
         fov: 147,
         near: 0.1,
