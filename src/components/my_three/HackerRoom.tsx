@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useFrame, type ThreeElements } from '@react-three/fiber';
 import { useGLTF, useTexture } from '@react-three/drei';
-import { type Mesh, type Group, type Material, type BufferGeometry } from 'three';
+import { type Mesh, type Group, type Material, type BufferGeometry, Texture } from 'three';
 import { type GLTF } from 'three-stdlib';
 
 type GLTFResult = GLTF & {
@@ -24,16 +24,19 @@ export function HackerRoom(props: ThreeElements['group']) {
   const [monitortxt, screenTxt] = useTexture([
     'textures/desk/monitor.png',
     'textures/desk/screen.png'
-  ]) as any;
+  ]) as [Texture | null, Texture | null];
   
   // Skip rendering until both textures are loaded
   if (!monitortxt || !screenTxt) return null;
 
   useFrame(() => {
-    if (groupRef.current) {
+    if (groupRef.current && monitortxt && screenTxt) {
       groupRef.current.rotation.y += 0.01;
     }
   });
+
+  // Return early only affects rendering, not hook calls
+if (!monitortxt || !screenTxt) return null;
 
   return (
     <group ref={groupRef} {...props} dispose={null}>

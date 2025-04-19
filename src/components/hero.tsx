@@ -34,7 +34,7 @@ const Hero = () => {
         <div className='space-y-2'>
           <m.div variants={FADE_DOWN_ANIMATION_VARIANTS} className='space-y-2'>
             <m.h1 className='text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl'>
-              Hi, I’m Muruganantham.
+               Hi, I&apos;m Muruganantham.
             </m.h1>
             <m.p className='text-2xl font-semibold text-primary md:text-3xl lg:text-4xl'>
               Full-stack Developer.
