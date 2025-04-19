@@ -67,6 +67,7 @@
     "eslint-plugin-deprecation": "3.0.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-tailwindcss": "3.18.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
     "postcss": "8.5.1",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "0.6.10",

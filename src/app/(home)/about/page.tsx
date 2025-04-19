@@ -6,7 +6,6 @@ import { Experience } from '@/components/experience'
 import { FramerDiv, FramerSection } from '@/components/framer'
 import { MyResumen } from '@/components/my-resumen'
 import { PageHeader } from '@/components/page-header'
-import { motion } from 'framer-motion'
 import { React } from '@/components/icons' // ✅ named import
 import Image from 'next/image'
 import Link from 'next/link'
@@ -114,33 +113,33 @@ export default function AboutPage() {
   animate="show"
   className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8"
 >
-  <h3 className="text-3xl font-bold mb-8 text-center">Course & Certification</h3>
+  <h3 className="mb-8 text-center text-3xl font-bold">Course & Certification</h3>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-full max-w-6xl">
+  <div className="grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
     {certificateList.map((cert, idx) => (
       <div
         key={idx}
-        className="rounded-2xl bg-muted border border-border shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
+        className="overflow-hidden rounded-2xl border border-border bg-muted shadow-lg transition-transform duration-300 hover:scale-[1.02]"
       >
-        <div className="h-56 w-full relative">
+        <div className="relative h-56 w-full">
           <Image
             src={cert.imageUrl}
             alt={cert.name}
             referrerPolicy="no-referrer"
             fill
-            className="object-cover w-full h-full rounded-t-2xl"
+            className="size-full rounded-t-2xl object-cover"
           />
         </div>
-        <div className="p-5 bg-background/80 backdrop-blur-sm">
+        <div className="bg-background/80 p-5 backdrop-blur-sm">
           <h4 className="text-lg font-semibold text-foreground">{cert.name}</h4>
-          <p className="text-muted-foreground text-sm">{cert.provider}</p>
-          <p className="text-muted-foreground text-xs">Issued: {cert.issuedDate}</p>
+          <p className="text-sm text-muted-foreground">{cert.provider}</p>
+          <p className="text-xs text-muted-foreground">Issued: {cert.issuedDate}</p>
 
           <a
       href={cert.imageUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block text-sm font-medium mt-2 text-primary hover:underline"
+      className="mt-2 inline-block text-sm font-medium text-primary hover:underline"
     >
       View Certificate
     </a>

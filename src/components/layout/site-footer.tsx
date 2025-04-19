@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear()
 const SiteFooter = () => {
   return (
     <footer className="w-full border-t bg-background py-6">
-      <div className="container flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-muted-foreground">
+      <div className="container flex flex-col items-center justify-between gap-6 text-sm text-muted-foreground md:flex-row">
         {/* Section 1: Name & Year */}
         <div className="text-center md:text-left">
           Terms & Conditions | Privacy Policy

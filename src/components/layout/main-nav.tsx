@@ -27,7 +27,7 @@ const MainNav: FC<MainNavProps> = ({ items }) => {
             Murugan<span className='text-primary'>.</span>
           </p> */}
 
-        <p className='hidden text-primary text-2xl font-bold md:inline-block'
+        <p className='hidden text-2xl font-bold text-primary md:inline-block'
           style={{
             fontFamily: "Acme, sans-serif !important",
             fontSize: "1.9rem",

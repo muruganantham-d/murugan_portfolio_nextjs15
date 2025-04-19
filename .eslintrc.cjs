@@ -10,7 +10,7 @@ const config = {
     ecmaVersion: 2022,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'tailwindcss'],
+  plugins: ['@typescript-eslint', 'tailwindcss', 'unused-imports'],
   extends: [
     'next/core-web-vitals',
     'plugin:deprecation/recommended',
@@ -27,7 +27,17 @@ const config = {
         fixStyle: 'inline-type-imports',
       },
     ],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': 'off', 
+    'unused-imports/no-unused-imports': 'error', 
+    'unused-imports/no-unused-vars': [
+      'warn',
+      {
+        vars: 'all',
+        varsIgnorePattern: '^_',
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+      },
+    ],
     'jsx-a11y/heading-has-content': 'off',
   },
   settings: {

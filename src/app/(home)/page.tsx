@@ -1,20 +1,15 @@
-import { allPosts } from 'content-collections'
 
 import { getLatestProjectsQuery } from '@/lib/querys'
 // import { client } from '@/lib/sanity'
 // import { client } from '@/sanity/lib/client';
-import { PostCard } from '@/components/cards/post-card'
 import Hero from '@/components/hero'
 import { PageHeader } from '@/components/page-header'
 import Projects from '@/components/projects'
-import Scroll from '@/components/scroll'
-import { m } from 'framer-motion'
 
 
 import type { ProjectsEntity } from '../../types/sanity'
 import { client } from '@/sanity/lib/client'
 import SkillsPage from './skills/page'
-import { FADE_DOWN_ANIMATION_VARIANTS } from '@/constants'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'

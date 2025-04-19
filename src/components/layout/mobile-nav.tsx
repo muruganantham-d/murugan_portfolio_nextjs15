@@ -32,7 +32,7 @@ const MobileNav: FC<MobileNavProps> = ({ items }) => {
           {/* <p className='text-2xl font-bold md:flex'>
             Murugan<span className='text-primary'>.</span>
           </p> */}
-          <p className='text-primary text-2xl font-bold md:flex'
+          <p className='text-2xl font-bold text-primary md:flex'
           style={{
             fontFamily: "Acme, sans-serif !important",
             cursor: "pointer",

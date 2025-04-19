@@ -1,8 +1,8 @@
 import { useRef } from 'react';
-import { useFrame, ThreeElements } from '@react-three/fiber';
+import { useFrame, type ThreeElements } from '@react-three/fiber';
 import { useGLTF, useTexture } from '@react-three/drei';
-import { Mesh, Group, Material, BufferGeometry } from 'three';
-import { GLTF } from 'three-stdlib';
+import { type Mesh, type Group, type Material, type BufferGeometry } from 'three';
+import { type GLTF } from 'three-stdlib';
 
 type GLTFResult = GLTF & {
   nodes: {

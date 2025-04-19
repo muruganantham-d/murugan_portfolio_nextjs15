@@ -6,9 +6,9 @@ import { useRef, useEffect } from 'react';
 import { useGLTF, useAnimations, useVideoTexture } from '@react-three/drei';
 import gsap from 'gsap';  
 import { useGSAP } from '@gsap/react';
-import { Group } from "three";
-import * as THREE from 'three'; 
-import { ThreeElements } from "@react-three/fiber"; 
+import { type Group } from "three";
+import type * as THREE from 'three'; 
+import { type ThreeElements } from "@react-three/fiber"; 
 
 
 interface DemoComputerProps {
