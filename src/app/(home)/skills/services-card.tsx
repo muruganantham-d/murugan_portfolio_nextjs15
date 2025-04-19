@@ -1,6 +1,7 @@
 // components/Services/ServicesCard.tsx
 import React from "react";
 import "./services-card.css";
+import Image from "next/image";
 
 interface ServicesCardProps {
   image: string;
@@ -11,7 +12,12 @@ interface ServicesCardProps {
 export const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, tags }) => {
   return (
     <div className="services-card">
-      <img src={image} alt={title} />
+      <Image
+        src={image}
+        alt={title}
+        width={500} 
+        height={300}
+      />
       <h2>{title}</h2>
       <div className="tags">
         {tags.map((tag, index) => (
