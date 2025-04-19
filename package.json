@@ -10,7 +10,7 @@
     "ts:check": "tsc --noEmit",
     "format": "prettier --write .",
     "clean": "rm -rf .next && rm -rf node_modules .content-collections .unlighthouse",
-    "unlighthouse": "pnpx unlighthouse --site https://jorgeassaf.vercel.app --desktop --no-cache"
+    "unlighthouse": "pnpx unlighthouse --site https://murugan-portfolio.vercel.app --desktop --no-cache"
   },
   "dependencies": {
     "@radix-ui/react-aspect-ratio": "1.1.1",
