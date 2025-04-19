@@ -25,7 +25,7 @@ const SkillsPage: React.FC = () => {
     >
       {/* <Heading text="Services" /> */}
       <div className="heading-container">
-      <h2 className="heading primary2">Skills</h2>
+      <h2 className="heading text-primary2">Skills</h2>
       <span></span>
     </div>
 
