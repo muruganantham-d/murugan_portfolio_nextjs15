@@ -39,7 +39,8 @@
     "remark-toc": "9.0.0",
     "sanity": "^3.85.1",
     "tailwind-merge": "2.6.0",
-    "three": "0.172.0"
+    "three": "0.172.0",
+    "three-stdlib": "^2.35.15"
   },
   "devDependencies": {
     "@content-collections/core": "0.8.0",
