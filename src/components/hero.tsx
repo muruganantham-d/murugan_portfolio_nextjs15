@@ -64,7 +64,7 @@ const Hero = () => {
             </Link>
             <Link
               className={cn(buttonVariants())}
-              href='https://www.linkedin.com/in/murugan-dr-baa770234/'
+              href='https://www.linkedin.com/in/muruganantham-d-baa770234/'
               title='View my LinkedIn profile'
               aria-label='View my LinkedIn profile'
               target='_blank'

@@ -28,7 +28,7 @@ const SiteFooter = () => {
             <Twitter className="size-4" aria-hidden="true" />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/murugan-dr-baa770234/"
+            href="https://www.linkedin.com/in/muruganantham-d-baa770234/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
